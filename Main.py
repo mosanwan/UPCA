@@ -7,9 +7,13 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(800, 600)
         self.setWindowTitle("UPCA")
 
+
 if __name__ == '__main__':
     import sys
     app = QApplication(sys.argv)
     win = MainWindow()
     win.show()
     exit(app.exec())
+
+
+
