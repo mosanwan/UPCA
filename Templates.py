@@ -1,7 +1,7 @@
 slate_h_template =\
-'#pragma once\n'\
-'\n'\
 '$authorinfo$\n'\
+'\n'\
+'#pragma once\n'\
 '\n'\
 'class $API$ $classname$ : public SCompoundWidget\n'\
 '{\n'\
@@ -38,4 +38,4 @@ user_ini_temp = \
 '@Date   $time$\n'\
 '\n'\
 '$sign$\n'\
-'*/\n'\
+'*/\n'
