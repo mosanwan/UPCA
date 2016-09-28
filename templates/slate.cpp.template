@@ -1,0 +1,14 @@
+#include "$pchfile$"
+#include "$classname$.h"
+
+#define  LOCTEXT_NAMESPACE "$classname$"
+
+void $classname$::Construct(const FArguments& InArgs)
+{
+	this->ChildSlot
+	[
+        SNew(SButton)
+	];
+}
+
+#undef   LOCTEXT_NAMESPACE
