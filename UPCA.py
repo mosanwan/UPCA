@@ -20,7 +20,7 @@ class MainWindow(QWidget):
         self.user_ini = expanduser("~") + "\\.upca.ini"
         self.setMinimumSize(600, 400)
         self.resize(500, 300)
-        self.setWindowTitle("UPCA--虚幻引擎4插件代码自动创建工具(V 1.1)")
+        self.setWindowTitle("UPCA--虚幻引擎4插件代码自动创建工具(V 1.2)")
         self.code_analyse()
         self.check_author_info()
         # self.create_menu()
@@ -126,7 +126,6 @@ class MainWindow(QWidget):
             return self.current_selected_module.upper() + "_API"
         else:
             h_str = Templates.none_h_class
-            h_str.replace()
             return ""
 
     def create_none_class(self):
