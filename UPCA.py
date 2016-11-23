@@ -186,15 +186,19 @@ class MainWindow(QWidget):
         pass
 
     def create_class(self):
-        if self.parentClassCombox.currentText() == "SCompoundWidget":
-            self.create_slate_class()
-        if self.parentClassCombox.currentText() == "None":
-            self.create_none_class()
-        if self.parentClassCombox.currentText() == "AActor":
-            self.create_actor_class()
-        if self.parentClassCombox.currentText() == "UObject":
-            self.create_object_class()
-        pass
+        try:
+            if self.parentClassCombox.currentText() == "SCompoundWidget":
+                self.create_slate_class()
+            if self.parentClassCombox.currentText() == "None":
+                self.create_none_class()
+            if self.parentClassCombox.currentText() == "AActor":
+                self.create_actor_class()
+            if self.parentClassCombox.currentText() == "UObject":
+                self.create_object_class()
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, "", "创建失败")
+            pass
 
     def create_tree(self):
         view = QTreeWidget()
